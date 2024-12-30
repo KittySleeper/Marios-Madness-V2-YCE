@@ -1,0 +1,22 @@
+{"songs":[
+    {
+        "displayName": "Its A Me",
+        "difficulties": [
+            "Normal"
+        ],
+        "char": "marioex2",
+        "color": "#01E96B",
+        "name": "its-a-me",
+        "bpm": 120
+    },
+    {
+        "displayName": "Starman Slaughter",
+        "difficulties": [
+            "Normal"
+        ],
+        "char": "marioex2",
+        "color": "#01E96B",
+        "name": "starman-slaughter",
+        "bpm": 128
+    }
+]}
