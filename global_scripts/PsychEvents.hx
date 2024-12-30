@@ -16,10 +16,22 @@ function onPsychEvent(event:String, v1:Dynamic, v2:Dynamic) {
 					gf.playAnim(v1, true);
 				default:
 					dads[0].playAnim(v1, true);
+					dad.camOffset.y += 120;
+					dad.camOffset.x += 120;
 			}
 
 		case "Change Character":
 			if (v1 == "dad" || v1 == "1")
 				changeDad(mod + ":" + v2);
+
+		//MM Events
+
+		case "Set Cam Zoom":
+			defaultCamZoom = Std.parseFloat(v1);
+
+		case "Ocultar HUD":
+			var stupidTimers = [0.5, 0.001, 0.5];
+
+			FlxTween.tween(camHUD, {alpha: if (v1 != "0") 1 else 0}, stupidTimers[Std.parseInt(v1)], {ease: FlxEase.quadInOut});
 	}
 }
