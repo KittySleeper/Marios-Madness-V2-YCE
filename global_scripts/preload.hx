@@ -1,6 +1,7 @@
 var preloadingShit = [
     "default" => {spritesheets: [], characters: []},
-    "its-a-me" => {spritesheets: [], characters: ["mariohorrorpissed"]}
+    "its-a-me" => {spritesheets: [], characters: ["mariohorrorpissed"]},
+    "starman-slaughter" => {spritesheets: [], characters: ["peach-exe", "yoshi-exe"]}
 ];
 
 function createPost() {
